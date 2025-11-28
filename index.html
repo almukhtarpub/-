@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>مكتبتي الشخصية</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <h1>ALMUKHTAR PUBLISHING / دار المختار للنشر</h1>
+        <p>استعرض كتبي/اقرآ/اشتر
+    </header>
+
+    <main> 
+        <section class="links-section">
+            <h2>منصاتي</h2>
+            <div class="links-container">
+                <a href="http://www.youtube.com/@ALMUKHTARPUBLISHING" target="_blank" class="link-btn youtube">
+                    <img src="images/youtube.png" alt="YouTube"> يوتيوب
+                </a>
+                <a href="https://www.tiktok.com/@almukhtar.publishing" target="_blank" class="link-btn tiktok">
+                    <img src="images/tiktok.png" alt="TikTok"> تيك توك
+                </a>
+                <a href="https://www.instagram.com/almukhtar.publishing?igsh=NzUydXB2MnE0c2s=
+                 " target="_blank" class="link-btn instagram">
+                    <img src="images/instagram.png" alt="Instagram"> انستقرام
+                </a>
+                <a href="https://x.com/" target="_blank" class="link-btn xplatform">
+                    <img src="images/x.png" alt="X"> X / تويتر
+                </a>
+               
+            </div>
+
+            <h3 style="text-align:center; margin-top:30px; font-size:1.2rem;">للتواصل</h3>
+
+            <div class="links-container" style="margin-top:10px;">
+                <a href="mailto:almukhtar.pub.info@gmail.com" class="link-btn email">
+                    <img src="images/email.png" alt="Email"> الإيميل
+                </a>
+                <a href="https://wa.me/4917622384138=مرحباً" target="_blank" class="link-btn whatsapp">
+                    <img src="images/whatsapp.png" alt="WhatsApp"> واتساب
+                </a> 
+            </div>
+        </section>
+
+        <section class="books-section">
+            <h2>كتبي</h2>
+            <div class="books-container">
+                <div class="book-card">
+                    <img src="images boock/book1.jpg" alt="كتاب 1" class="book-img">
+                    <h3>عنوان الكتاب الأول</h3>
+                    <p>وصف مختصر عن الكتاب الأول يمكنك تغييره من هنا.</p>
+                </div>
+                <div class="book-card">
+                    <img src="images boock/book2.jpg" alt="كتاب 2" class="book-img">
+                    <h3>عنوان الكتاب الثاني</h3>
+                    <p>وصف مختصر عن الكتاب الثاني يمكنك تغييره من هنا.</p>
+                </div>
+                <div class="book-card">
+                    <img src="images boock/book3.jpg" alt="كتاب 3" class="book-img">
+                    <h3>عنوان الكتاب الثالث</h3>
+                    <p>وصف مختصر عن الكتاب الثالث يمكنك تغييره من هنا.</p>
+                </div>               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة | مكتبتي </p>
+    </footer>
+
+    <!-- Overlay + نافذة عرض الصورة مع زر إغلاق -->
+    <div id="modalOverlay" class="modal-overlay" aria-hidden="true">
+        <div class="image-modal" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+            <button id="closeModalBtn" class="close-btn" aria-label="إغلاق صورة">✕</button>
+            <img id="modalImage" src="" alt="Book Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
